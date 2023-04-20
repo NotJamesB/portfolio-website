@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
     margin: 0px;
     padding: 0px;
+    position: relative;
+    overflow: hidden;
     /* background-color: #16002B; */
-    background-image: url(https:/img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1380&t=st=1681855011~exp=1681855611~hmac=0f9858f4b8a04fc85cb5589838b3dbac0dc72e8e0e78dcf08c3b99c4b1c6302a);
-    background-size: 100% 100%;
+}
+
+.background-image {
+    width: 110%;
+    height: 110%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: url('https:/4kwallpapers.com/images/walls/thumbs_3t/2903.png') no-repeat left center / cover;
 }
 
 .test {
@@ -32,8 +42,18 @@ body {
     margin-right: 20px;
 }
 
+.infopanel {
+    pointer-events: none;
+}
+
 .container {
     min-height: 100vh;
+    position: relative;
+    pointer-events: none;
+}
+
+.HeaderButtons {
+    pointer-events: all;
 }
 
 .contact {
