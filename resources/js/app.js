@@ -1,6 +1,6 @@
 import './bootstrap';
 
-const bg = document.querySelector('.background-image');
+const bg = document.querySelector('.downpic');
 const windowWidth = window.innerWidth / 5;
 const windowHeight = window.innerHeight / 5;
 

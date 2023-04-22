@@ -2,29 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
     margin: 0px;
     padding: 0px;
     position: relative;
-    overflow: hidden;
+    min-height: 500vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     /* background-color: #16002B; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .background-image {
-    width: 110%;
-    height: 110%;
-    left: 0;
-    top: 0;
+    /* width: 110%;
+    height: 110%; */
+    /* left: 0;
+    top: 0; */
     position: absolute;
     background: url('https:/4kwallpapers.com/images/walls/thumbs_3t/2903.png') no-repeat left center / cover;
 }
 
-.test {
-    color: red;
-    background-color: blue;
-    display: inline;
-    size: 24;
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #22e2df #404040;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #404040;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #b700ff;
+    border-radius: 10px;
+    border: 3px none #ffffff;
 }
 
 .name {
@@ -43,13 +62,84 @@ body {
 }
 
 .infopanel {
-    pointer-events: none;
+    /* pointer-events: none; */
+}
+
+.leftinfocolumn {
+    background: rgba(238, 53, 241, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(238, 53, 241, 1);
+}
+
+.aboutMe {
+    position: absolute;
+    min-width: 55%;
+    min-height: 7%;
+    text-align: center;
+
+    top: 120vh;
+    left: 22%;
+    margin: 0;
+    padding: 0;
+    background: rgba(238, 53, 241, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(238, 53, 241, 1);
+}
+
+.aboutText {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.downpic {
+    position: absolute;
+    left: 26%;
+    top: 70%;
+    animation: bounce 3s ease-in-out 0s infinite normal none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, -20px);
+    }
+
+    50% {
+        transform: translate(0, -5px);
+    }
+
+    75% {
+        transform: translate(0, -15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 50vh;
     position: relative;
-    pointer-events: none;
+    /* pointer-events: none; */
+}
+
+.projects {
+    position: absolute;
+    min-height: 50vh;
+    left: 25%;
+    min-width: 50%;
+    top: 220vh;
 }
 
 .HeaderButtons {
