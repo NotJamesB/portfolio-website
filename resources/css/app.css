@@ -12,6 +12,7 @@ body {
     /* background-color: #16002B; */
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,6 +25,11 @@ html {
     position: absolute;
     background: url('https:/4kwallpapers.com/images/walls/thumbs_3t/2903.png') no-repeat left center / cover;
 }
+
+
+/* .Header{
+    position: fixed;
+} */
 
 /* Firefox */
 * {
@@ -47,7 +53,7 @@ html {
 }
 
 .name {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .profilepic {
@@ -59,6 +65,10 @@ html {
 
 .infobutton {
     margin-right: 20px;
+}
+
+.intro {
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .infopanel {
@@ -81,7 +91,7 @@ html {
     text-align: center;
 
     top: 120vh;
-    left: 22%;
+    left: 23%;
     margin: 0;
     padding: 0;
     background: rgba(238, 53, 241, 0);
@@ -90,19 +100,20 @@ html {
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
     border: 1px solid rgba(238, 53, 241, 1);
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .aboutText {
     position: absolute;
     top: 30%;
-    left: 8%;
-    font-family: 'Oswald', sans-serif;
+    left: 1%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .downpic {
     position: absolute;
     left: 26%;
-    top: 70%;
+    top: 100%;
     animation: bounce 3s ease-in-out 0s infinite normal none;
 }
 
@@ -137,13 +148,142 @@ html {
 .projects {
     position: absolute;
     min-height: 50vh;
-    left: 25%;
-    min-width: 50%;
+    left: 20%;
+    min-width: 60%;
     top: 220vh;
+    text-align: center;
+
+    background: rgba(238, 53, 241, 0);
+    border-radius: 49px 49px 49px 49px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(238, 53, 241, 1);
 }
+
+.projtitle {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.projectbuttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.staticimg {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border-radius: 49px 49px 49px 49px;
+    -webkit-border-radius: 49px 49px 49px 49px;
+    -moz-border-radius: 49px 49px 49px 49px;
+    border: 3px solid #f155ff;
+}
+
+.staticimg:hover {
+    position: absolute;
+    opacity: 0;
+    width: 550px;
+    height: 400px;
+    transition: 0.4s;
+}
+
+.testparent:hover .testchild .projectimg1 {
+    height: 400px;
+    width: 500px;
+    transition: 0.4s ease-in-out;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 6px 30px 11px #03f7ff;
+}
+
+.testparent {
+    margin-right: 10px;
+}
+
+#projimghover:hover {
+    width: 500px;
+    height: 600px
+}
+
+.projectimg1 {
+    /* margin-right: 10px; */
+    height: 300px;
+    width: 400px;
+    border-radius: 49px 49px 49px 49px;
+    -webkit-border-radius: 49px 49px 49px 49px;
+    -moz-border-radius: 49px 49px 49px 49px;
+}
+
 
 .HeaderButtons {
     pointer-events: all;
+}
+
+.skills {
+    position: absolute;
+    top: 350vh;
+    left: 30%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 40%;
+    background-color: #a545ca2a;
+    padding: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 49px 49px 49px 49px;
+    -webkit-border-radius: 49px 49px 49px 49px;
+    -moz-border-radius: 49px 49px 49px 49px;
+    border: 1px solid #f155ff;
+}
+
+.skillsinfo {
+    /* display: flex; */
+    position: relative;
+    width: 600px;
+}
+
+.educationinfo {
+    border: 3px solid #f155ff;
+}
+
+.logos {
+    /* display: flex; */
+}
+
+.logoicons {
+    height: 150px;
+    width: 150px;
+}
+
+.bootcamp {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid #57ffff;
+}
+
+.links {
+    position: absolute;
+    top: 460vh;
+    left: 33%;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    min-width: 30%;
+    min-height: 100px;
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 49px 49px 49px 49px;
+    -webkit-border-radius: 49px 49px 49px 49px;
+    -moz-border-radius: 49px 49px 49px 49px;
+    border: 2px solid #f155ff;
+}
+
+.linkbtns {
+    width: 100px;
+    height: 100px;
 }
 
 .contact {
@@ -157,6 +297,7 @@ html {
     font-size: 0.7rem;
     padding: 1rem 3rem;
     transition: 0.5s;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .contact:hover {
